@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>兄弟选择器</title>
+	<style>
+		/*兄弟选择器一共有两种*/
+		/*第一种是相邻兄弟选择器 还有一种是通用兄弟选择器*/
+		.middle+p{
+		/*兄弟选择器只会向下寻找兄弟 选不到上面的兄弟*/
+		/*这是相邻兄弟选择器 如果中间有其他元素把.middle和p隔开的话是不能这么写的*/
+			font-size:24px;
+		}
+		.middle~p{
+			color:skyblue;
+		}
+		/*这是通用兄弟选择器 会选中所有的兄弟*/
+		/*兄弟选择器只能向下寻找 选不到上面的兄弟*/
+	</style>
+</head>
+<body>
+	<p>我是1</p>
+	<p class="middle">我是2</p>
+	<p>我是3</p>
+	<p>我是4</p>
+	<p>我是5</p>
+	<p>我是6</p>
+	<div>我是div</div>
+</body>
+</html>

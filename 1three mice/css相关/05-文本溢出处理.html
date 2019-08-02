@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>文本溢出处理</title>
+	<style type="text/css">
+		p{
+			width: 200px;
+			border: 1px solid #000;
+			white-space: nowrap;
+			text-overflow: ellipsis;
+			/*overflow挤满；溢出 ellipsis省略号 text-overflow就是指文本溢出后
+			文本溢出后我们可以有两个解决方法 一个是取值ellipsis(省略号) 一个是取值clip(剪掉)
+			*/
+			overflow:hidden;
+			/*hidden隐藏的
+			此条表示溢出后隐藏*/
+		}
+	</style>
+</head>
+<body>
+	<p>
+		━((*′д｀)爻(′д｀*))━!!!!打架打架
+	</p>
+	<p>
+		(>﹏<)oo━((*′д｀)爻(′д｀*))━oo(>﹏<)劝架劝架
+	</p>
+</body>
+</html>

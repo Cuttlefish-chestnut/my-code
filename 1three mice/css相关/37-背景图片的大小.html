@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>背景图片的大小</title>
+	<style>
+		.x{
+			height:400px 400px;
+			background-image: url(../picture/cake.png);
+			background-repeat: no-repeat;
+			background-size: 100px 100px;
+			/*背景大小：宽度 高度/单词
+			  1宽高 写成数字和百分比的形式
+			   或者写一个宽或高 然后使用auto表示自动等比例拉伸*/
+		}
+		.y{
+			height:400px 400px;
+			background-image: url(../picture/cake.png);
+			background-repeat: no-repeat;
+			background-size: cover;
+			/*cover覆盖 就是把整个图片拉伸到充满父元素的程度*/
+		}
+		.z{
+			height:400px 400px;
+			background-image: url(../picture/cake.png);
+			background-repeat: no-repeat;
+			background-size: contain;
+			/*contain包含、含有 是指把图片拉伸到有一边填满边框的程度*/
+		}
+		2单词 cover
+	</style>
+</head>
+<body>
+	<div class="x"></div>
+	<div class="y"></div>
+	<div class="z"></div>
+</body>
+</html>

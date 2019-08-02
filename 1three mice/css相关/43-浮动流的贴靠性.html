@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>贴靠性</title>
+	<style>
+		.father{
+			width: 600px;
+			height: 600px;
+			border: solid;
+		}
+		.son1{
+			float: left;
+			width: 100px;
+			height: 200px;
+			background: tomato; 
+		}
+		.son2{
+			float: right;
+			width: 200px;
+			height: 100px;
+			background: pink;
+		}
+		.son3{
+			float: right;
+			width: 301px;
+			height: 100px;
+			background: orange;
+		}
+		/*当父元素的宽度不足以撑起所有浮动的子元素的时候，会发生贴靠现象*/
+		/*后面的元素会找前面的元素贴靠 不够就在向上贴靠 直到贴靠到父元素上（会超出父元素）*/
+	</style>
+</head>
+<body>
+	<div class="father">
+		<div class="son1"></div>
+		<div class="son2"></div>
+		<div class="son3"></div>
+	</div>
+</body>
+</html>

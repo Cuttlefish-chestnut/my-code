@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>浮动流</title>
+	<style>
+		.father{
+			height: 500px;
+			width: 500px;
+			border: solid;
+		}
+		.son{
+			height: 100px;
+			width: 100px;
+		}	
+		.son1{
+			float: left;
+			/*
+			float:浮、漂浮、漂浮物
+			float用于浮动流
+			浮动流常常用于横向的排版
+			而标准流(块状、行内、行内块状)的设置则主要用于竖向的排版
+			*/
+			background-color: orange;
+		}
+		.son2{
+			float: right;
+			/*设置漂浮属性后 标签将不再区分块状、行内、行内块状等形式 都会转化成类似于行内块状的形式*/
+			/*浮动流的元素不能使用margin：0 auto的形式来居中（也不能设置float：center）*/
+			background-color: tomato;
+		}
+		.son3{
+			background-color: #6cf;
+		}
+		.son4{
+			float: right;
+			background: pink;
+		}
+		/*我们发现son4的位置在第二行 这是浮动元素的特性：浮动前元素在第几行 浮动后元素还在第几行*/
+	</style>
+</head>
+<body>
+	<div class="father">
+		<span class="son son1">我是span</span><span class="son2 son">我是span</span><div class="son son3">我是div</div><div class="son son4">我是div</div>
+	</div>
+</body>
+</html>

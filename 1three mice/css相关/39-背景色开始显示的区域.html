@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>38-背景图片开始显示的区域.html</title>
+	<style>
+		.a{
+			width: 300px;
+			height: 300px;
+			border: 10px dashed;
+			margin-bottom: 10px;
+			padding: 20px;
+			background-color: orange;
+			background-repeat: no-repeat;
+			background-clip:border-box;
+			/*clip切、夹子
+			  背景图片的起源 可以取值为border-box（默认） padding-box
+			  content-box 表示图片从哪里开始显示
+			*/
+		}
+		.b{
+			width: 300px;
+			height: 300px;
+			border: 10px dashed;
+			margin-bottom: 10px;
+			padding: 20px;
+			background-color: orange;
+			background-repeat: no-repeat;
+			background-clip:content-box;
+		}
+		.c{
+			width: 300px;
+			height: 300px;
+			border: 10px dashed;
+			margin-bottom: 10px;
+			padding: 20px;
+			background-color: orange;
+			background-repeat: no-repeat;
+			background-clip:padding-box;
+		}
+	</style>
+</head>
+<body>
+	<div class="a">1</div>
+	<div class="b">2</div>
+	<div class="c">3</div>
+</body>
+</html>

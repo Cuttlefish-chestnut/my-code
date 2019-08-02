@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>margin重叠1</title>
+	<style type="text/css">
+		.box1{
+			background: tomato;
+			width: 100px;
+			height: 100px;
+			margin-bottom: 100px;
+			overflow: hidden;
+		}
+		.father{
+			overflow: hidden;
+		}
+		.box2{
+			background: #0ff;
+			width: 100px;
+			height: 100px;
+			margin-top: 100px;
+			overflow: hidden;
+		}
+		/*
+		一个盒子下设置了外边距 一个盒子上设置了外边距 但是他们之间发生了重叠现象
+		*/
+		/*
+		想要消除这种重叠现象需要借助BFC
+		*/
+		/*
+		BFC是一个独立的布局环境 其中的布局元素不受外界的影响
+		*/
+		/*
+		BFC的触发方式：见css基础 其中有一种我们学过：overflow的值为hidden
+		*/
+	</style>
+</head>
+<body>
+	<div class="box1"></div>
+	<div class="father">
+		<div class="box2"></div>
+	</div>
+	
+</body>
+</html>

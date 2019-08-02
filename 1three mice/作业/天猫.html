@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>天猫</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		.all{
+			width: 800px;
+			margin:0 auto;
+			border: solid;
+		} 
+		header>img{
+			position:fixed;
+			left: 50%;
+			margin-left: -20px;
+		}
+		header>ul{
+			position: fixed;
+			width: 1000px;
+			height: 50px;
+			top: 20px;
+			left: 50%;
+			margin-left: -500px;
+			box-sizing: border-box;
+		}
+		header>ul>li{
+			display: inline-block;
+			height: 50px;
+			width:20%;
+			list-style: none;
+			background: grey;
+			text-align: center;
+			line-height: 50px;
+		}
+		ul #w3{
+			background-color: #e22a28;
+		}
+		section img.ad{
+			margin: 80px auto 0;
+			width: 800px;
+			border: 1px solid;
+		}
+		
+
+/*		section div.content{
+			height: 2000px;
+			width: 100%;
+			background: skyblue;
+		}*/
+	</style>
+</head>
+<body>
+	<div class="all">
+		<header>
+			<img src="../picture/tmall.png">
+			<ul>
+				<li>天猫会员</li><li>品牌街</li><li id="w3">电器城</li><li>营业厅</li><li>魅力惠</li>
+			</ul>
+		</header>
+		<section>
+			<img source="../picture/ad1.jpg" class="ad"></img>
+			<div class="content">我是内容</div>
+				<div class="f f1">&lt;</div>
+				<div class="f f1">&gt;</div>
+				<div class="y y1">1</div>
+				<div class="y y2">2</div>
+				<div class="y y3">3</div>
+				<div class="y y4">4</div>
+				<div class="y y5">5</div>
+			</div>
+			<div class="left"></div>
+			<div class="right"></div>
+		</section>
+		<footer>
+			<div><a href="#">返回顶部</a></div>
+		</footer>
+	</div>
+</body>
+</html>

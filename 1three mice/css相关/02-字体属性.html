@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>字体属性</title>
+	<style>
+		p{
+			font-style:italic;
+			/*文字的样式 分为两种 italic(倾斜的）和normal(正常的)*/
+			font-weight:bold;
+			/*文字的粗细 分为四种 normal(正常的) blod(粗的) bloder(更粗的) lighter(更细的)*/
+			/*除写单词以外 还有另外一种设置文字粗细的方法 可以在“：”后跟上100-900的整百数字来表示粗细*/
+			font-size:24px;
+			/*默认值取决于标签(body默认取值16px)*/
+			/*举例三种设置字体大小的方法：1数值+px 2数值+100%(参照父级单位文字的大小的百分比) 3数值+em(参照父级单位文字的大小的倍数 1em就是原来的一倍即不变)*/
+			font-family:STSong;
+			/*默认的字体是微雅软黑 要想使用某种字体就必须在电脑上有下载*/
+			/*举例几种字体：STSong(宋体)STHeiti(黑体)Arial(微雅软黑)*/
+			
+			/*还有一种缩写格式
+			  像这样：
+			  font:样式 粗细 大小 字体 /
+			  font:italic blod 24px STSong;
+			  大小和字体必须在最后 中间不加任何东西 顺序不能改变
+			  样式和粗细可以互换位置
+			  这种缩写形式必须至少写大小和字体两种属性*/
+		}
+	</style>
+</head>
+<body>
+	<p>
+		yeah
+	</p>
+</body>
+</html>

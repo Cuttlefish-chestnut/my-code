@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>过渡</title>
+	<style>
+		.d1{
+			height: 100px;
+			width: 100px;
+			background-color:pink;
+			transition-property: width,height;
+			/*transition:过渡
+			transition-property：表示要过渡的元素*/
+			transition-duration: 1s;
+			/*duration:持续时间*/
+			transition-delay: 1s;
+			/*delay:延迟*/
+			transition-timing-function:ease;
+			/*timing-function定时功能*/
+			/*表示过渡的速度*/
+		}
+		.d2{
+			height: 100px;
+			width: 100px;
+			background-color: #0FF;
+			transition: width 1s linear,height 1s linear;
+			/*复合样式:
+			transition：设置对象(property) 持续时间(duration) 过渡速度(timing-function) 延迟时间(delay) */
+		}
+		
+		
+		.d1:hover{
+			height: 200px;
+			width: 200px;
+		}
+		.d2:hover{
+			height: 200px;
+			width: 200px;
+		}
+	</style>
+</head>
+<body>
+	<div class="d1"></div>
+	<image class="d2" src="../picture/cake.png"></image>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>浮动的清除1</title>
+	<style type="text/css">
+		*{
+			padding: 0;
+			margin: 0;
+		}
+		.father1{
+			background-color: pink;
+			height: 300px;
+			/*可以通过给上一个盒子设置高度实现 不推荐使用*/
+		}
+		.son1{
+			height: 100px;
+			width: 100px;
+			float: left;
+			background-color: orange;
+
+		}
+		.son2{
+			height: 100px;
+			width: 100px;
+			float: left;
+			background-color: tomato;
+
+		}
+	</style>
+</head>
+<body>
+	<div class="father1">
+		<p class="son1">p1</p>
+		<p class="son1">p2</p>
+		<p class="son1">p3</p>
+	</div>
+	<div class="father2">
+		<p class="son2">p1</p>
+		<p class="son2">p2</p>
+		<p class="son2">p3</p>
+	</div>
+</body>
+</html>

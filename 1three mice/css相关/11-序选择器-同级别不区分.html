@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>序选择器</title>
+	<style type="text/css">
+		p:first-child{
+			color:red;
+		}
+		/*这个在第一个div里是没有是没有结果的 因为first-child这种选择器是包含所有同级别兄弟的 而代码中的第一个孩子是span*/
+		p:last-child{
+			font-size:24px;
+		}
+		/*选择同级别的最后一个元素*/
+		p:nth-child(2){
+			color:tomato;
+		}
+		/*()里边的内容可以为数字，表示此父元素内的第几个*/
+		/*()里边的内容也可以为odd(奇数)或even(偶数)*/
+		/*()里边的内容也可以为xn+y(xy由编程者定 例如2n+1)*/
+
+		p:nth-last-child(2){
+			color:pink;
+		}
+		/*倒着数第...个*/
+		p:only-child{
+			font-style:italic;
+		}
+		/*找到父元素里唯一的子元素(其他不同标签也不行)*/
+		/*可以把序选择器理解为一种交集选择器（交集选择器代表满足所有条件）*/
+		/*选择器和冒号间没有空格*/
+	</style>
+</head>
+<body>
+	<div>
+		<span>d1</span>
+		<p>p1</p>
+		<p>p2</p>
+		<p>p3</p>
+		<p>p4</p>
+	</div>
+	<div>
+		<p>p5</p>
+	</div>
+</body>
+</html>

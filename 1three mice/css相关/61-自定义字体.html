@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>自定义字体</title>
+	<style>
+		@font-face{
+			font-family: textfont1;
+			src:url(../../Windows/Fonts/ACaslonPro-Regular.otf);
+		}
+		@font-face{
+			font-family: textfont1;
+			src:url(../../Windows/Fonts/ACaslonPro-Bold.otf);
+			font-weight: bold;
+		}
+		@font-face{
+			font-family: textfont1;
+			src:url(../../Windows/Fonts/AdobeArabic-Italic.otf);
+			font-style: italic;
+		}
+
+		p:nth-child(1){
+			font-family: textfont1;
+		}
+		p:nth-child(2){
+			font-family: textfont1;
+			font-weight: bold;
+		}
+		p:nth-child(3){
+			font-family: textfont1;
+			font-style: italic;
+		}
+		
+	</style>
+</head>
+<body>
+	<div>
+		<p>hello我是内容123</p>
+		<p>hello我是内容123</p>
+		<p>hello我是内容123</p>
+
+	</div>
+</body>
+</html>

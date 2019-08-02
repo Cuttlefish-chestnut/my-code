@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>浮动的清除-外墙法</title>
+	<style type="text/css">
+		*{
+			padding: 0;
+			margin: 0;
+		}
+		.father1{
+			background-color: pink;
+		}
+		.father2{
+			background-color: #0FF;
+		}
+		.son1{
+			height: 100px;
+			width: 100px;
+			float: left;
+			background-color: orange;
+
+		}
+		.son2{
+			height: 100px;
+			width: 100px;
+			float: left;
+			background-color: tomato;
+
+		}
+		.wall{
+			clear: both;
+			/*外墙法*/
+			/*可以通过在两部分内容间加上一堵墙来分割*/
+			/*这种办法下还是不能给第一个盒子添加margin-bottom值*/
+			/*但是可以给第二个盒子添加margin-top值*/
+		}
+	</style>
+</head>
+<body>
+	<div class="father1">
+		<p class="son1">p1</p>
+		<p class="son1">p2</p>
+		<p class="son1">p3</p>
+	</div>
+	<div class="wall"></div>
+	<div class="father2">
+		<p class="son2">p1</p>
+		<p class="son2">p2</p>
+		<p class="son2">p3</p>
+	</div>
+</body>
+</html>

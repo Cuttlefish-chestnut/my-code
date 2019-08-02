@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>绝对定位</title>
+	<style>
+		*{
+			padding: 0;
+			margin: 0;
+		}
+		.father{
+			position: relative;
+			width: 600px;
+			height: 600px;
+			border: solid;
+		}
+		.son1{
+			position:absolute;
+			top:50%;
+			left:0;
+			width: 200px;
+			height: 200px;
+			margin-top: -100px;
+			/*
+			绝对定位的参考元素 是父元素中有定位属性的元素 且这个元素离自己最近    如果所有父元素都没有定位属性 那么这个元素会找到body 以body为自己的参考元素
+			父元素的margin值和border值对定位元素没有影响 定位元素以父元素为参考时会从padding区域开始参考
+			
+			绝对定位中设置居中的方法：先设置离顶部有50%的距离 再用margin值往回设置元素本身一半的距离
+
+			绝对定位是脱离标准流的 所以在原来标准流内的空间会被释放 不区分行内、块状、行内块状
+			*/
+
+			background-color: pink;
+
+		}
+	</style>
+</head>
+<body>
+	<div class="father">
+		<div class="son1"></div>
+		<div class="son2"></div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>固定定位</title>
+	<style>
+		*{
+			padding: 0;
+			margin: 0;
+		}
+		body{
+			height:2000px;
+		}
+		.father{
+			width: 800px;
+			margin: 0 auto;
+			border: solid;
+		}
+		.son1{
+			position: fixed;
+			left: 50%;
+			top: 20px;
+			/*固定定位是没办法移动的 需要借助四条边的移动距离↑*/
+			/*固定元素是脱离标准流的 所以原来的位置会被顶替 不区分行内、块状、行内块状*/
+			/*固定元素的参考元素始终都是body*/
+			margin-left: -250px;
+			height: 50px;
+			width: 500px;
+			background: pink;
+		}
+		.son2{
+			width: 100px;
+			height: 100px;
+			background: #0FF;
+		}
+	</style>
+</head>
+<body>
+	<div class="father">
+		<div class="son1"></div>
+		<div class="son2"></div>
+	</div>
+</body>
+</html>

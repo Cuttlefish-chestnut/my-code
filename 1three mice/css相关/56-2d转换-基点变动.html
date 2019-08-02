@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>基点转换</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		div{
+			position: relative;
+			/*relative相对定位*/
+			margin:100px auto;
+			width: 200px;
+			height: 200px;
+		}
+		li{
+			position:absolute;
+			/*absolute绝对定位*/
+			top: 0;
+			left: 0;
+			width: 200px;
+			height: 200px;
+			transform-origin: 100px 0;
+			list-style: none;
+
+		}
+		ul li:first-of-type{
+			background-color: pink;
+			transform: rotate(20deg);
+		}			
+		ul li:nth-of-type(2){
+			background-color: green;
+			transform: rotate(30deg);
+			transform-origin: 0,0;
+		}
+		ul li:last-of-type{
+			background-color: skyblue;
+			transform: rotate(40deg);
+			transform-origin: 0,0;
+
+	</style>
+</head>
+<body>
+	<div>
+		<ul>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+	</div>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>动画的播放状态</title>
+	<style>
+		.sport1{
+			height: 100px;
+			width: 100px;
+			background: #66ccff;
+			animation-name: sport1;
+			animation-duration: 0.6s;
+			animation-iteration-count: infinite;
+			animation-play-state: paused;
+			animation-direction: alternate;
+		}
+		.sport2{
+			height: 100px;
+			width: 100px;
+			background: #66ccff;
+			animation: sport2 0.6s linear 0s alternate infinite;
+			animation-play-state: paused;
+			/*复合样式：名字 执行时间 动画速度 延迟时间 动画执行次数 是否执行往返动画（可以调换后两个的顺序）*/
+		}
+		div:hover{
+			animation-play-state:running;
+		}
+		@keyframes sport1{
+			form{
+				height: 100px;
+				width: 100px;
+			}
+			to{
+				height: 200px;
+				width: 200px;
+			}
+		}
+		@keyframes sport2{
+			form{
+				height: 100px;
+				width: 100px;
+			}
+			to{
+				height: 200px;
+				width: 200px;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="sport1"></div>
+	<div class="sport2"></div>
+</body>
+</html>

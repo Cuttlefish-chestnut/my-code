@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>动画的其他属性1</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		div{
+			height: 200px;
+			width: 200px;
+			background: #66ccff;
+			animation-name: sport;
+			animation-duration: 1s;
+			animation-delay: 1s;
+			/*动画的延迟时间*/
+			animation-timing-function: ease;
+			/*动画的执行速度*/
+			animation-iteration-count :infinite;
+			/*interation-count重复总数 infinite无限*/
+			animation-direction: normal;
+			/*direction动向 执行不执行往返动画 还可以取值alternate（执行往返动画）*/
+		}
+		@keyframes sport{
+			from{
+				background: #66ccff;
+			}
+			to{
+				background:pink;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div></div>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>元素的垂直居中</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		.father{
+			height: 400px;
+			width: 400px;
+			border: 1px solid;
+			margin: 0 auto;
+			/*先看son里的字↓*/
+			/*1.在父元素中设置padding值 像这样：*/
+			padding-top: 150px;
+			padding-bottom: 150px;
+			/*(bottom可以省去 只用设置顶部的top值即可)
+			还没有完 内边距也是盒子的一部分 要做如下处理*/
+			box-sizing: border-box;
+		}
+		.son{
+			/*
+			想把son放在垂直居中的位置怎么办呢
+			两种办法（看小灰字）
+			*/
+			height: 100px;
+			width: 100px;
+			background-color: #0FF;
+			/*
+			2.在子元素中设置margin值
+			这个直接设置即可 因为外边距不会影响盒子大小 像这样：
+			margin-top: 150px;*/
+			
+		}
+
+	</style>
+</head>
+<body>
+	<div class="father">
+		<div class="son"></div>
+	</div>
+</body>
+</html>

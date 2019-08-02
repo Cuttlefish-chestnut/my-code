@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>表单标签</title>
+	</head>
+	<body>
+		<form action="https://www.kuazhu.com" method="GET">
+			form创建一个表单标签
+			<!-- action属性 是表单数据提交的地址 -->
+			<!-- 
+				method是表单数据提交的方式 举例两种 
+				一种是"POST",一种是"GET"
+				GET提交的方式是把信息放在地址中
+				POST则是另外一种方式传递信息 不在地址内显现
+			-->
+			<!--
+				type这个属性的取值有很多种 不同的取值有不同的功能
+				(type 类型  input type 输入类型)
+			-->
+			<laber for="username">用户名：</laber>
+			<input type="test" name="Username" value="qwq" placeholder="请输入用户名" id="username">
+			 <!-- 
+				type取值是test 表明输入方式是明文
+			 -->
+			 <!--
+			 	value来设置默认值
+			 -->
+			<!-- 
+				placeholder属性 给input设置 输入字段的提示 
+			-->
+			<!-- 
+			autocomplete属性 取值有on和off 设置是否使用输入字段的自动完成功能
+			 -->
+			<!-- 
+				laber标签 把文字和输入框进行绑定 点击文字会让对应的输入框得到焦点 
+			-->
+			密码：<input type="password" name="password" value="999">
+			<!-- type取值是password 表明输入方式是暗文 value来设置默认值-->
+				<input type="submit" value="提交">
+				<!-- submit提交 value代表输入-->
+				<input type="reset" value="重置">
+				<!-- reset重置 -->
+				<input type="button" value="一个没用的按钮">
+				<!-- button按钮 -->
+			接biaodanbiaoqian2.html
+		</form>
+	</body>
+</html>

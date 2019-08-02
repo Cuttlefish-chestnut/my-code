@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>伪类选择器1-a标签</title>
+	<!-- 伪类选择器就是针对标签的状态进行选择 然后添加样式 -->
+	<style type="text/css">
+		a:link{
+			color:black;
+		}
+		a:hover{
+			color:pink; 
+		}
+		a:active{
+			color:red;
+		}
+		a:visitied{
+			color:orange;
+		}
+		/*顺序必须是先“放上时”再“点击时”*/
+	</style>
+</head>
+<body>
+	<a href="#">我是链接</a>
+	<!-- 小技巧,测试是为了让页面恢复到初始状态,可以在地址栏中的地址后面加上?(问号)后跟一个随机数 -->
+</body>
+</html>

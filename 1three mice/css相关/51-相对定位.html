@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>相对定位</title>
+	<style>
+		div{
+			position: relative;
+			bottom: 40px;
+			left: 50px;
+			right: 50px;
+			padding: 20px;
+			/*相对定位是相对于元素在标准流中的位置*/
+			/*相对定位中如果同时设置了top值和bottom值 left值和right值 则top值和left值会优先成立*/
+			/*padding、boeder、margin值会在相对定位之前生效*/
+			/*相对定位没有脱离标准流 原来所占的空间不会被释放 只是形式上变了*/
+			height: 100px;
+			width: 100px;
+			background-color: tomato;
+		}
+	</style>
+</head>
+<body>
+	<div></div>
+</body>
+</html>

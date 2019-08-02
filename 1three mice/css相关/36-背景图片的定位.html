@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>背景图片的定位</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		div{
+			height: 1200px;
+			width: 300px;
+			border: 1px solid;
+			background-image: url(../picture/cake.png);
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+			background-position: 100px 200px;
+			/*position定位、位置
+			有两个取值 水平方向的定位和竖直方向的定位 参照点都是父元素的左上角点
+			还可以用单词定位
+			水平方向：right center left
+			垂直方向：top middle bottom
+			*/
+		}
+	</style>
+</head>
+<body>
+	<div></div>
+</body>
+</html>

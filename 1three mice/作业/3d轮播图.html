@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>3d轮播图</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		body{
+			perspective: 500px;
+			/*percpective属性对ul起作用 要放在ul父元素内*/
+		}
+		ul{
+			position: relative;
+			height: 200px;
+			width: 200px;
+			margin: 100px auto;
+			transform: rotateX(20deg) rotateY(0deg);
+			transform-style: preserve-3d;
+			/*这个属性对li起作用 要放在li的父元素内*/
+			animation: sport 4s linear 0.1s infinite;
+			animation-play-state: running;
+
+		}
+		ul:hover{
+			animation-play-state: paused;			
+		}
+		li{
+			position: absolute;
+			top: 0;
+			right: 0;
+			height: 200px;
+			width: 200px;
+			list-style: none;
+			text-align: center;
+			line-height: 200px;		
+		}
+		li:nth-child(1){
+			background-color: tomato;
+			transform: translateX(-200px) rotateY(-90deg);
+		}
+		li:nth-child(2){
+			background-color: #6FF;
+			transform: translateX(200px) rotateY(90deg);
+
+		}
+		li:nth-child(3){
+			background-color: #129912;
+			transform: translateY(-100px) rotateX(90deg) scale(2,1);
+		}
+		li:nth-child(4){
+			background-color: gold;
+			transform: translateY(100px) rotateX(-90deg) scale(2,1);
+		}
+		li:nth-child(5){
+			background-color: orange;
+			transform: translateZ(100px) scale(2,1);
+		}
+		li:nth-child(6){
+			background-color: #F8F;
+			transform: translateZ(-100px) rotateY(180deg) scale(2,1) rotateZ(180deg);
+		}
+		li img{
+			height: 100%;
+			width: 100%;
+		}
+		@keyframes sport{
+			from{
+				transform:rotateX(0deg)
+			}
+			to{
+				transform:rotateX(360deg);
+			}
+		}
+	</style>
+</head>
+<body>
+	<ul>
+		<li>1</li>
+		<li>2</li>
+		<li><img src="../picture/手风琴1.jpg"></li>
+		<li><img src="../picture/手风琴2.jpg"></li>
+		<li><img src="../picture/手风琴3.jpg"></li>
+		<li><img src="../picture/手风琴4.jpg"></li>
+	</ul>
+</body>
+</html>

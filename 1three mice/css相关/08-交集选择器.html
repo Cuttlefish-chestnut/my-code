@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>交集选择器</title>
+	<style>
+		/*交集选择器就是选中符合所有所写内容的项*/
+		/*所写内容间的各项没有空格 标签选择器一定要写在类和id选择器前*/
+		p.text{
+			font-size:24px;
+		}
+		.text.txt{
+			color:skyblue;
+		}
+	</style>
+</head>
+<body>
+	<p class="text">我是段落1</p>
+	<p class="text txt">我是段落2</p>
+	<div class="text txt">我是div1</div>
+	<div class="txt">我是div2</div>
+	<span class="text txt">我是span1</span>
+	<span>我是span2</span>
+</body>
+</html>

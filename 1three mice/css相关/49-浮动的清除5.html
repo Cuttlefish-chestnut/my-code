@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>浮动的清除5-伪类选择器</title>
+	<style type="text/css">
+		*{
+			padding: 0;
+			margin: 0;
+		}
+		.father1{
+			background-color: pink;
+		}
+		.father2{
+			background-color: #0FF;
+		}
+		.son1{
+			height: 100px;
+			width: 100px;
+			float: left;
+			background-color: orange;
+
+		}
+		.son2{
+			height: 100px;
+			width: 100px;
+			float: left;
+			background-color: tomato;
+
+		}
+		.clearfix:after{
+			clear: both;
+			display: block;
+			height: 0;
+			content: "";
+			visibility: hidden;
+			/*visibility能见度*/
+		}
+		.clearfix{
+			*zoom: 1;
+		}
+		/*这种办法是利用伪类选择器来创造一堵不见踪影的墙 力荐*/
+	</style>
+</head>
+<body>
+	<div class="father1 clearfix">
+		<p class="son1">p1</p>
+		<p class="son1">p2</p>
+		<p class="son1">p3</p>
+		<div class="wall"></div>
+	</div>
+	
+	<div class="father2 ">
+		<p class="son2">p1</p>
+		<p class="son2">p2</p>
+		<p class="son2">p3</p>
+	</div>
+</body>
+</html>

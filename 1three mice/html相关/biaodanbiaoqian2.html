@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>表单标签2</title>
+	</head>
+	<body>
+		<h1 align="center">我要当巨星</h1>
+		<form action="http://www.kuazhu.com" method="GET" align="center">
+			<p>
+				用户名：
+				<input type="test" name="Username" value="坤坤">
+			</p>
+			<p>	
+				密码：
+				<input type="password" name="password">
+			</p>
+			<p>
+				性别：
+				女<input type="radio" name="sex" value="man" checked="checked">
+				<!-- 选择类型为收音机 意思就是在同一个收音机内(name属性的取值相同）点一个另一个原来被选中的会自动取消（单选框） -->
+
+				<!-- 此时的value属性代表浏览器接受的信息名称 -->
+
+				<!-- checked是选中的意思 在收音机中设置默认选项要用checked属性来完成 -->
+
+				<!-- checked="checked"可以直接写成checked 当取值和属性相同时只写一个属性即可 不用写取值 -->
+				男<input type="radio" name="sex" value="woman">
+				保密<input type="radio" name="sex" value="no">
+			</p>
+			<p>
+				爱好：
+				唱跳<input type="checkbox" name="hobby" value="sing and dance" checked>
+				Rap<input type="checkbox"name="hobby" value="rap" checked>
+				打篮球<input type="checkbox" name="hobby" value="basketball" checked>
+			</p>
+			<p>
+
+			<p>
+				<label for="lucky number">幸运数字：<label>
+				<input type="number" name="lucky number" value="7" id="lucky number">
+			<p>
+				出生日期:
+				<input type="date" name="date">
+			</p>
+			</p>
+				<input type="submit" value="提交">
+				<input type="reset" value="重置">
+				<input type="button" value="一个没用的按钮">
+			</p>
+	</body>
+</html>

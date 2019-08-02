@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>单页滚动页面</title>
+	<link rel="stylesheet" href="../css/单页作业/font_04c2uytbc0ij/iconfont.css">
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		html{
+			height: 100%;
+		}
+		body{
+			height: 100%;
+		}
+		.all{
+			height: 100%;
+		}
+		.all>input,.all>a{
+			position: fixed;
+			width: 20%;
+			height: 50px;
+			background-color: rgba(0,0,0,0.7);
+			z-index: 1;
+		}
+		.all>a,.all>i{
+			line-height: 50px; 
+			text-align: center;
+			font-size: 24px;
+			color: white;
+			text-decoration: none;
+		}
+		.all>input{
+			z-index: 9;
+			opacity: 0;
+		}
+		.all>#radio1:checked+a:nth-of-type(1){
+			color:#f30;
+		}
+		.all>#radio1:checked~.content{
+			transform: translateY(0px);
+			transition: all 1s;
+			animation: sport 2s;
+		}
+		.all>#radio2:checked+a:nth-of-type(2){
+			color:#f30;
+		}
+		.all>#radio2:checked~.content{
+			transform: translateY(-100%);
+			transition: all 1s;
+		}
+		.all>#radio2:checked~.content .page2{
+			animation: sport 2s;
+		}
+		.all>#radio3:checked+a:nth-of-type(3){
+			color:#f30;
+		}
+		.all>#radio3:checked~.content{
+			transform: translateY(-200%);
+			transition: all 1s;
+		}
+		.all>#radio3:checked~.content .page3{
+			animation: sport 2s;
+		}
+		.all>#radio4:checked+a:nth-of-type(4){
+			color:#f30;
+		}
+		.all>#radio4:checked~.content{
+			transform: translateY(-300%);
+			transition: all 1s;
+		}
+		.all>#radio4:checked~.content .page4{
+			animation: sport 2s;
+		}
+		.all>#radio5:checked+a:nth-of-type(5){
+			color:#f30;
+		}
+		.all>#radio5:checked~.content{
+			transform: translateY(-400%);
+			transition: all 1s;
+		}
+		.all>#radio5:checked~.content .page5{
+			animation: sport 2s;
+		}
+		.all>#radio1+a,#radio1{
+			top:0;
+			left:0%;
+		}
+		.all>#radio2+a,#radio2{
+			top:0;
+			left:20%;
+		}
+		.all>#radio3+a,#radio3{
+			top:0;
+			left:40%;
+		}
+		.all>#radio4+a,#radio4{
+			top:0;
+			left:60%;
+		}
+		.all>#radio5+a,#radio5{
+			top:0;
+			left:80%;
+		}
+		.content{
+			height: 100%;
+			box-sizing: border-box;
+		}
+		.pages{
+			padding-top: 50px;
+			height: 100%;
+			width: 100%;
+			box-sizing: border-box;
+			overflow: hidden;
+		}
+		img{
+			height: 100%;
+			width: 100%;
+		}
+		@keyframes sport{
+			from{
+				opacity: 0;
+			}
+			to{
+				opacity: 1;
+			}
+		}
+		.all{
+			overflow: hidden;
+		}
+	</style>
+</head>
+<body>
+	<div class="all">
+		<input type="radio" name="nav" id="radio1" checked ></input>
+		<a href="javascript:;"><i class="iconfont icon-fl-jia"></i>Home</a>
+		<input type="radio" name="nav" id="radio2"></input>
+		<a href="javascript:;"><i class="iconfont icon-kafei"></i>Service</a>
+		<input type="radio" name="nav" id="radio3"></input>
+		<a href="javascript:;"><i class="iconfont icon-loufang"></i>About</a>
+		<input type="radio" name="nav" id="radio4"></input>
+		<a href="javascript:;"><i class="iconfont icon-tuandui"></i>Team</a>
+		<input type="radio" name="nav" id="radio5"></input>
+		<a href="javascript:;"><i class="iconfont icon-weibiaoti-"></i>Contact</a>
+		<div class="content">
+			<div class="pages page1"><img src="../picture/home.png"></img></div>
+			<div class="pages page2"><img src="../picture/service.png"></img></div>
+			<div class="pages page3"><img src="../picture/about.png"></img></div>
+			<div class="pages page4"><img src="../picture/team.png"></img></div>
+			<div class="pages page5"><img src="../picture/contact.png"></img></div>
+		</div>
+	</div>
+</body>
+</html>

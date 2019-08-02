@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>内边距和外边距</title>
+	<style>
+		.father div{
+			background:tomato;
+			width:200px;
+			height:200px;
+			margin:20px;
+			padding:20px;
+			/*
+			外边距margin不会影响元素的宽高
+			但会影响元素空间的宽和高
+			
+			外边距margin可以取负值 表示向相反方向移动
+
+			内边距padding有背景色 背景色和内容背景色相同
+			外边距margin没有背景色
+			
+
+			padding来设置父元素与子元素之间的距离
+			margin来设置元素与元素之间的距离
+			*/
+		}
+
+	</style>
+</head>
+<body>
+	<div class="father">
+		<div class="son1"></div>
+		<div class="son2"></div>
+		<div class="son3"></div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<title>背单词</title>
+		<style>
+			/*body{*/
+				/*background-color: pink*/
+			/*}*/
+			#wy{
+				color: #66ccff;
+				font-size: 24px
+			}
+			#middle{
+				color: pink;
+				font-size: 24px;
+			}
+			a{
+				color:black;
+				font-size: 18px;
+				text-decoration:none;
+			}
+			body{
+				text-align:center;
+			}
+			h1{
+				color:#BA55D3;
+				font-size:40px;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>单词表</h1>
+		<a href="#middle">开始背单词<img src="../picture/start.jpg" height="18px"></a>
+		<div id="wy">
+			<p>video视频</p>
+			<p>audio声音的</p>
+			<p>autoplay自动播放</p>
+			<p>muted静音</p>
+			<p>poster视频播放前的占位图片</p>
+			<p>source源文件(src)</p>
+			<p>a链接到另一个页面</p>
+			<p>base基础(单标签)</p>
+			<p>href超链接</p>
+			<p>target目标(网页的打开方式是在内部或外部)</p>
+			<p>preload预加载</p>
+			<p>muted静音</p>
+			<p>bottom底部</p>
+			<p>controls显示进度条</p>
+			<p>autoplay自动播放</p>
+			<p>loop重复播放</p>
+			<p>height高度</p>
+			<p>width宽度</p>
+			<p>nav导航</p>
+			<p>aticle主要内容</p>
+			<p>aside辅助信息</p>
+			<p>footer脚本</p>
+			<p>&nbsp空格</p>
+			<p>&lt<</p>
+			<p>&gt></p>
+			<p>&copy商标</p>
+			<p>bgcolor(属性)(细线表格)背景色</p>
+			<p>cellspacing外边距！</p>
+			<p>aligh水平对齐！(left center right)</p>
+			<p>valign垂直对齐！(top middle bottom)</p>
+			<p>placeholder输入框内显示内容</p>
+			<p>form表单标签</p>
+			<p>value传给服务器的数据</p>
+			<p>checked被选中的</p>
+			<p>type类型</p>
+			<p>input type输入类型</p>
+			<p>action表单数据提交地址！</p>
+			<p>method表单数据提交方式！</p>
+			<p>laber完成绑定</p>
+			<p>autocomplete是否补全数据！</p>
+			<p>submit提交</p>
+			<p>reset重置</p>
+			<p>button按钮</p>
+			<p>content内容</p>
+			<p>keyword关键词</p>
+			<p>description描述</p>
+			<p>author作者</p>
+			<p>section内容</p>
+			<p>normal正常的(用于表示文字样式的默认)</p>
+			<p>italic倾斜的</p>
+			<p>weight重量(用于表示文字样式的粗细)</p>
+			<p>colspan水平方向的合并</p>
+			<p>rowspan垂直方向的合并</p>
+			<p>dl定义列表(只能包含dt和dd)</p>
+			<p>dt条目</p>
+			<p>dd描述</p>
+			<p>ul无序列表</p>
+			<p>ol有序列表</p>
+			<p>decoration装饰(用于文本的装饰属性 即下划线等)!</p>
+			<p>through穿过</p>
+			<p>text-shadow文本阴影</p>
+			<p>nowrap不换行</p>
+			<p>text文本</p>
+			<p>ellipsis省略号</p>
+			<p>overflow溢出</p>
+			<p>white-space空白符</p>
+			<p>text-indent首行缩进</p>
+			<p>hr画一条水平的线</p>
+			<p>i格式标签倾斜</p>
+			<p>focus获取焦点时的样式</p>
+			<p>solid实线</p>
+			<p>dashed虚线</p>
+			<p>dotted点状</p>
+			<p>margin外边距</p>
+			<p>border边框</p>
+			<p>padding内边距</p>
+			<p>！格式标签！</p>
+			<p>vertical竖直的</p>
+			<p>vertical-align是用来设置元素的垂直对齐方式的</p>
+			<p>align对齐</p>
+			<p>repeat重复</p>
+			<p>fix固定</p>
+			<p>attachment附件（背景图片的固定）</p>
+			<p>cover覆盖</p>
+			<p>contain包含、含有（把背景图片拉伸到有一边填满边框的程度）</p>
+			<p>sprite精灵/雪碧</p>
+			<p>clip夹、剪</p>
+			<p>visibility能见度</p>
+			<p>origin起源</p>
+			<p>relative相对的</p>
+			<p>absolute绝对的</p>
+			<p>radius半径</p>
+			<p>transition 过渡</p>
+			<p>duration 持续时间</p>
+			<p>delay 延迟</p>
+			<p>timing-function 定时功能（表示过渡的速度）</p>
+			<p>ease容易</p>
+			<p>linear直线的（过渡速度中的匀速）</p>
+			<p>rotate旋转</p>
+			<p>translate平移</p>
+			<p>scale缩放</p>
+			<p>perspective透视</p>
+			<p>opacity透明度</p>
+			<p>animation动画片</p>
+			<p>infinite无尽的</p>
+			<p>iteration-count重复计数</p>
+			<p>direction动向(往返动画)</p>
+			<p>alternate执行往返动画</p>
+			<p>ignore忽视</p>
+			<p>remove去除</p>
+			要写百分比动画 旋转菜单
+			<p>branch分支</p>
+			<p>merge合并</p>
+			<p>checkout查看</p>
+			<p>remote远程</p>
+			<p>dev开发</p>
+			<p></p>
+			<p></p>
+		</div>
+		
+		<a href="#middle">开始背单词<img src="../picture/start.jpg" height="18px"></a><br />
+		<a href="#top">让我再康康<img src="../picture/interesting.jpg" height="18px"></a>
+		<div id="middle">
+			<p>视频</p>
+			<p>声音的</p>
+			<p>自动播放</p>
+			<p>静音</p>
+			<p>视频播放前的占位图片</p>
+			<p>源文件(src)</p>
+			<p>链接到另一个页面</p>
+			<p>基础(单标签)</p>
+			<p>超链接</p>
+			<p>目标(网页的打开方式是在内部或外部)</p>
+			<p>预加载</p>
+			<p>静音</p>
+			<p>底部</p>
+			<p>显示进度条</p>
+			<p>自动播放</p>
+			<p>重复播放</p>
+			<p>高度</p>
+			<p>宽度</p>
+			<p>导航</p>
+			<p>主要内容</p>
+			<p>辅助信息</p>
+			<p>脚本</p>
+			<p>空格</p>
+			<p>&lt</p>
+			<p>&gt</p>
+			<p>&copy</p>
+			<p>(属性)(细线表格)背景色</p>
+			<p>外边距！</p>
+			<p>水平对齐！(left center right)</p>
+			<p>垂直对齐！(top middle bottom)</p>
+			<p>输入框内显示内容</p>
+			<p>表单标签</p>
+			<p>传给服务器的数据</p>
+			<p>被选中的</p>
+			<p>类型</p>
+			<p>输入类型</p>
+			<p>表单数据提交地址！</p>
+			<p>表单数据提交方式！</p>
+			<p>完成绑定</p>
+			<p>是否补全数据！</p>
+			<p>提交</p>
+			<p>重置</p>
+			<p>按钮</p>
+			<p>内容</p>
+			<p>关键词</p>
+			<p>描述</p>
+			<p>作者</p>
+			<p>内容</p>
+			<p>正常的(用于表示文字样式的默认)</p>
+			<p>倾斜的</p>
+			<p>重量(用于表示文字样式的粗细)</p>
+			<p>水平方向的合并</p>
+			<p>垂直方向的合并</p>
+			<p>定义列表</p>
+			<p>条目</p>
+			<p>描述</p>
+			<p>无序列表</p>
+			<p>有序列表</p>
+			<p>装饰(用于文本的装饰属性 即下划线等)!</p>
+			<p>穿过</p>
+			<p>文本阴影</p>
+			<p>不换行</p>
+			<p>文本</p>
+			<p>省略号</p>
+			<p>溢出</p>
+			<p>空白符</p>
+			<p>首行缩进</p>
+			<p>画一条水平的线</p>
+			<p>格式标签倾斜</p>
+			<p>获取焦点时的样式</p>
+			<p>实线</p>
+			<p>虚线</p>
+			<p>点状</p>
+			<p>外边距</p>
+			<p>边框</p>
+			<p>内边距</p>
+			<p></p>
+			<p>竖直的</p>
+			<p>对齐</p>
+			<p>重复</p>
+			<p>固定</p>
+			<p>附件（背景图片的固定）</p>
+			<p>覆盖</p>
+			<p>包含、含有（把背景图片拉伸到有一边填满边框的程度）</p>
+			<p>精灵/雪碧</p>
+			<p>夹、剪</p>
+			<p>能见度</p>
+			<p>起源</p>
+			<p>相对的</p>
+			<p>绝对的</p>
+			<p>半径</p>
+			<p>过渡</p>
+			<p>持续时间</p>
+			<p>延迟</p>
+			<p>定时功能（表示过渡的速度）</p>
+			<p>容易</p>
+			<p>直线的（过渡速度中的匀速）</p>
+			<p>旋转</p>
+			<p>平移</p>
+			<p>缩放</p>
+			<p>透视</p>
+			<p>透明度</p>
+			<p>动画片</p>
+			<p>无尽的</p>
+			<p>重复计数</p>
+			<p>动向(往返动画)</p>
+			<p>执行往返动画</p>
+			<p></p>
+			<p></p>
+			<p></p>
+			<p></p>
+			<p></p>
+			<p></p>
+			<p></p>
+		</div>
+	</body>
+</html>

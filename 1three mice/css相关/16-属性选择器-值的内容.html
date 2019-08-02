@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>属性选择器-值的开头</title>
+	<style type="text/css">
+		[title~=kuazhu]{
+			font-size:24px;
+		}
+		/*这是css2的写法 只能识别单个的元素和元素与元素间加空格的*/
+		[title*=kuazhu]{
+			color:pink;
+		}
+		/*
+		敲黑板
+		开头老式：| 新式：^
+		结尾$
+		结尾老式：~ 新式：*
+		*/
+	</style>
+</head>
+<body>
+	<p title="kuazhu.com">kuazhu.com</p>
+	<p title="kuazhu com">kuazhu com</p>
+	<p title="kuazhu">kuazhu</p>
+</body>
+</html>
