@@ -1,0 +1,39 @@
+.top{
+	height: 34px;
+	background-color: pink;
+}
+.top-nav{
+	float: left;
+	height: 34px;
+	width: 678px;
+	background-color: #ff1122
+}
+.top-car{
+	float: right;
+	height: 34px;
+	width: 130px;
+	background-color: #ff1122
+}
+.top-user{
+	float:right;
+	height: 34px;
+	width: 180px;
+	margin-right: 24px;
+	background-color: #ff1122
+}
+.nav{
+	height: 100px;
+	background-color: #66ccff;
+}
+.home{
+	height:832px;
+	background-color: grey;
+}
+.content{
+	height: 2136px;
+	background-color: gold;
+}
+.foot{
+	height: 284px;
+	background-color: tomato;
+}
