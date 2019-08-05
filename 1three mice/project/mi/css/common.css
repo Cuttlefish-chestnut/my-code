@@ -27,3 +27,11 @@ a{
 	margin-left: 2px;
 	margin-right: 2px;
 }
+.left{
+	float: left;
+	width: 234px;
+}
+.right{
+	float: right;
+	width: 978px;
+}

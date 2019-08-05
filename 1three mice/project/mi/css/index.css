@@ -92,8 +92,26 @@
 		height: 50px;
 		width: 246px;
 		padding: 12px;
-		border: 1px solid #999;
+		border: 1px solid #eee;
 		box-sizing: border-box;
+	}
+	.sousuo input:hover{
+		border: 1px solid #999;
+	}
+	.sousuo input:hover~.sousuo-btn{
+		border: 1px solid #999;
+		border-left: none;
+		height: 50px;
+		width: 50px;
+		text-align: center;
+		line-height: 50px;
+	}
+	.sousuo input:focus{
+		border: 1px solid #ff6700;
+	}
+	.sousuo input:focus~.sousuo-btn{
+		border: 1px solid #ff6700;
+		border-left: none;
 	}
 	.sousuo .hot-word{
 		position: absolute;
@@ -122,7 +140,7 @@
 		width: 50px;
 		text-align: center;
 		line-height: 50px;
-		border: 1px solid #999;
+		border: 1px solid #eee;
 		border-left: none;
 		box-sizing: border-box;
 	}
@@ -135,7 +153,7 @@
 			position: relative;
 			height:460px;
 			background-color: blue;
-			margin-bottom: 84px;
+			margin-bottom: 42px;
 		}
 		.lunbo-table{
 			position: relative;
@@ -150,6 +168,7 @@
 			line-height: 42px;
 			padding-left: 15px;
 			padding-right: 15px;
+			cursor: pointer;
 		}
 		.lunbo-list a{
 			font-size: 14px;
@@ -216,7 +235,47 @@
 		.home-hot{
 			height: 170px;
 			background-color: blue;
-			margin-bottom: 84px
+			margin-bottom: 42px;
+		}
+		.home-hot-left{
+			float: left;
+			height: 85px;
+			width: 73px;
+			background-color: #5f5750;
+		}
+		.home-hot-left{
+			color: #cfcdcb;
+			text-align: center;
+			padding-top: 10px; 
+			box-sizing: border-box;
+		}
+/*		.home-hot-lefts .home-hot-left1:after {
+			content: "";			
+			height: 70px;
+			width: 50px;
+			background-color: #000;*/
+		}
+		.home-hot i{
+			display: block;
+			font-size: 40px;
+		}
+		.home-hot-rights{
+			height: 170px;
+			background-color: red;
+		}
+		.home-hot-rights .hot-ad1{
+			height: 170px;
+			width: 316px;
+		}
+		.home-hot-rights .hot-ad2{
+			height: 170px;
+			width: 316px;
+			margin-left: 15px;
+		}
+		.home-hot-rights .hot-ad3{
+			height: 170px;
+			width: 316px;
+			margin-left: 15px;
 		}
 	/*shangou*/
 		.shangou{
