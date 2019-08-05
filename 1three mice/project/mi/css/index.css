@@ -21,7 +21,7 @@
 		color: #fff;
 	}
 	.top-item>span{
-		color: #33373b;
+		color: #40403b;
 		font-size: 12px;
 	}
 	.top-car{
@@ -33,6 +33,12 @@
 		color: #b0b0b0;
 		text-align: center;
 		line-height: 34px;
+	}
+	.top-car i{
+		font-size: 20px;
+	}
+	.top-car span{
+		vertical-align: 3px;
 	}
 	.top-car:hover{
 		background-color: #fff;
@@ -47,19 +53,18 @@
 	}
 /*nav*/
 	.nav{
-		height: 100px;
+
 		background-color: #fff;
-		overflow: hidden;
 	}
 	.nav .logo{
 		float:left;
 		margin-top: 22px;
-		margin-right: 186px
+		margin-right: 150px
 	}
 	.nav .nav-nav{
 		float: left;
 		height:100px;
-		width: 600px;
+
 
 	}
 	.nav-ul-li{
@@ -68,11 +73,15 @@
 		margin-right: 20px;
 	}
 	.nav-ul-li a{
-		font-size: 20px;
+		font-size: 18px;
 		color: #333;
+	}
+	.nav-ul-li a:hover{
+		color: #ff6700;
 	}
 	.nav .sousuo{
 		float: right;
+		position: relative;
 		margin-top: 25px;
 		height: 50px;
 		width: 296px;
@@ -86,7 +95,28 @@
 		border: 1px solid #999;
 		box-sizing: border-box;
 	}
-	.sousuo div{
+	.sousuo .hot-word{
+		position: absolute;
+		top: 16px;
+		background-color: #eee;
+		color: #757575;
+		border:none;
+		font-size: 12px;
+	}
+	.sousuo .hot-word1{
+		left: 127px;
+		height: 18px;
+
+	}
+	.sousuo .hot-word2{
+		left: 170px;
+		height: 18px;
+	}
+	.sousuo .hotword:hover{
+		background-color: #ff6700;
+		color: #fff;
+	}
+	.sousuo .sousuo-btn{
 		float: right;
 		height: 50px;
 		width: 50px;
@@ -97,10 +127,106 @@
 		box-sizing: border-box;
 	}
 /*home*/
-	.home{
-		height:832px;
-		background-color: grey;
-	}
+	/*lunbo*/
+		.home{
+			padding-bottom: 42px;
+		}
+		.lunbo{
+			position: relative;
+			height:460px;
+			background-color: blue;
+			margin-bottom: 84px;
+		}
+		.lunbo-table{
+			position: relative;
+			height: 460px;
+			width: 234px;
+			padding-top: 15px;
+			background-color: rgba(0,0,0,0.6);
+			box-sizing: border-box;
+			z-index: 1;
+		}
+		.lunbo-list{
+			line-height: 42px;
+			padding-left: 15px;
+			padding-right: 15px;
+		}
+		.lunbo-list a{
+			font-size: 14px;
+			color: #fff;
+		}
+		.lunbo-list a i{
+			float:right;
+			font-size: 16px;
+		}
+		.lunbo-list:hover {
+			background-color: #ff6700;
+		}
+		.lunbo-img img{
+			position:absolute;
+			top:0;
+			left:0;
+			height: 460px;
+			width: 1226px;
+		}
+		.lr-btn{
+			position: absolute;
+			top: 190px;
+			height: 70px;
+			width: 40px;
+			font-size: 32px;
+			line-height: 70px;
+			text-align: center;
+			color:#575757;
+			cursor: pointer;
+		}
+		.lr-btn:hover{
+			color:#fff;
+			background-color: rgba(0,0,0,0.5);
+		}
+		.left-btn{
+			left: 234px;
+			border-top-right-radius: 3px;
+			border-bottom-right-radius: 3px;
+		}
+		.right-btn{
+			right: 0px;
+			border-top-left-radius: 3px;
+			border-bottom-left-radius: 3px;
+		}
+		.dians{
+			position:absolute;
+			right: 35px;
+			bottom: 25px;
+		}
+		.dian{
+			float: right;
+			height: 8px;
+			width: 8px;
+			background-color: #7c8c98;
+			border: 2px solid #a4afb6;
+			border-radius: 50%;
+			margin-left: 10px;
+		}
+		.dian:hover{
+			background-color: #e3f4fd;
+			border: 2px solid #889398;
+		}
+	/*hot*/
+		.home-hot{
+			height: 170px;
+			background-color: blue;
+			margin-bottom: 84px
+		}
+	/*shangou*/
+		.shangou{
+			height: 340px;
+			background-color: blue;
+		}
+	/*ad*/
+		.home .ad{
+			background-color: blue;
+		}
 /*content*/
 	.content{
 		height: 2136px;
