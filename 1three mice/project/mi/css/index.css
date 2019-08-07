@@ -233,49 +233,62 @@
 		}
 	/*hot*/
 		.home-hot{
-			height: 170px;
-			background-color: blue;
 			margin-bottom: 42px;
+		}
+		.home-hot-lefts{
+			float: left;
 		}
 		.home-hot-left{
 			float: left;
 			height: 85px;
-			width: 73px;
+			width: 78px;
 			background-color: #5f5750;
-		}
-		.home-hot-left{
 			color: #cfcdcb;
 			text-align: center;
 			padding-top: 10px; 
 			box-sizing: border-box;
 		}
-/*		.home-hot-lefts .home-hot-left1:after {
+		/*.home-hot-lefts>div:after{
 			content: "";			
 			height: 70px;
 			width: 50px;
-			background-color: #000;*/
-		}
-		.home-hot i{
+			background-color: #000;
+		}*/
+		.home-hot-left i{
 			display: block;
 			font-size: 40px;
 		}
 		.home-hot-rights{
 			height: 170px;
-			background-color: red;
 		}
-		.home-hot-rights .hot-ad1{
+		.hot-ad1{
+			float: left;
 			height: 170px;
 			width: 316px;
 		}
-		.home-hot-rights .hot-ad2{
+		.hot-ad1 img{
+			height: 100%;
+			width: 100%;
+		}
+		.hot-ad2{
+			float: left;
 			height: 170px;
 			width: 316px;
 			margin-left: 15px;
 		}
-		.home-hot-rights .hot-ad3{
+		.hot-ad2 img{
+			height: 100%;
+			width: 100%;
+		}
+		.hot-ad3{
+			float: left;
 			height: 170px;
 			width: 316px;
 			margin-left: 15px;
+		}
+		.hot-ad3 img{
+			height: 100%;
+			width: 100%;
 		}
 	/*shangou*/
 		.shangou{
@@ -289,8 +302,28 @@
 /*content*/
 	.content{
 		height: 2136px;
-		background-color: gold;
+		background-color: #f5f5f5;
 	}
+	.phone-top{
+		height: 80px;
+	}
+	.phone-content{
+		height: 614px;
+	}
+	.phone-left{
+		height: 614px;
+	}
+	.phone-left img{
+		height: 100%;
+		width: 100%;
+	}
+	.phone-right .goods-m:nth-child(1){
+		margin-left: 0;
+	}
+	.phone-right .goods-m:nth-child(5){
+		margin-left: 0;
+	}
+
 /*foot*/
 	.foot{
 		height: 284px;

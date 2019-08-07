@@ -9,6 +9,10 @@ a{
 	text-decoration: none;
 	font-size: 12px;
 }
+img{
+	height: 100%;
+	width: 100%;	
+}
 .clearfix:after{
 	display: block;
 	clear: both;
@@ -34,4 +38,89 @@ a{
 .right{
 	float: right;
 	width: 978px;
+}
+.hover-shadow-up{
+	transition: box-shadow 0.2s 0s linear,transform 0.2s 0s linear;
+}
+.hover-shadow-up:hover{
+	box-shadow: 0px 20px 20px rgba(0,0,0,0.3);
+	transform: translateY(-5px);
+}
+.content-title{
+	float: left;
+	height: 60px;
+	margin-top: 20px;
+}
+.content-title h2{
+	font-size: 24px;
+	line-height: 60px;
+	font-weight: lighter;
+}
+.goods{
+	float: left;
+	background-color: #fff;
+}
+.goods-m{
+	height: 300px;
+	width: 235px;
+	margin-left: 12.5px;
+	margin-bottom: 14px;
+	text-align: center;
+}
+.goods-m img{
+	margin-top: 20px;
+	height: 160px;
+	width: 160px;
+}
+.goods-name{
+	display: block;
+	font-size: 14px;
+	color: #333;
+	margin-top: 5px;
+}
+.goods-des{
+	display: block;
+	font-size: 12px;
+	color: #b0b0b0;
+	margin-bottom: 10px;
+}
+.pri-o,.pri-n{
+	font-size: 14px;
+}
+.pri-n{
+	color:#ff6700;
+}
+.pri-o{
+	color: #b0b0b0;
+}
+.checkout-all{
+	float: right;
+	margin-top: 20px;
+}
+.checkout-all a{
+	font-size: 18px;
+	line-height: 60px;
+	color: #333;
+	transition: all 0.2s 0s linear;
+}
+.checkout-all i{
+	font-size: 16px;
+}
+.checkout-all div{
+	display: inline-block;
+	height: 24px;
+	width: 24px;
+	border-radius: 50%;
+	background-color: #b0b0b0;
+	text-align: center;
+	line-height: 24px;
+	color:#fff;
+	transition: all 0.2s 0s linear;
+}
+.checkout-all a:hover{
+	color: #ff6700;
+}
+.checkout-all a:hover div{
+	background-color: #ff6700;
+	color: #fff;
 }
