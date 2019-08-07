@@ -57,6 +57,7 @@ img{
 	font-weight: lighter;
 }
 .goods{
+	position: relative;
 	float: left;
 	background-color: #fff;
 }
@@ -123,4 +124,21 @@ img{
 .checkout-all a:hover div{
 	background-color: #ff6700;
 	color: #fff;
+}
+.tab{
+	position: absolute;
+	top:0;
+	left: 50%;
+	margin-left: -32px;
+	height: 20px;
+	width: 64px;
+	line-height: 20px;
+	text-align: center;
+	color:white;
+}
+.tab-new{
+	background-color: #83c44e;
+}
+.tab-discount{
+	background-color: #e53935;
 }
