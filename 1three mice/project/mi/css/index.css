@@ -240,26 +240,78 @@
 		}
 		.home-hot-left{
 			float: left;
+			position: relative;
 			height: 85px;
 			width: 78px;
 			background-color: #5f5750;
 			color: #cfcdcb;
 			text-align: center;
-			padding-top: 10px; 
+			padding-top: 20px; 
 			box-sizing: border-box;
+			font-size: 16px;
 		}
-		/*.home-hot-lefts>div:after{
+		.home-hot-lefts>a:after{
+			position: absolute;
+			top: 9px;
+			left: 76px;
 			content: "";			
-			height: 70px;
-			width: 50px;
-			background-color: #000;
-		}*/
-		.home-hot-left i{
+			height: 66px;
+			width: 1px;
+			z-index: 1;
+			background-color: #665e57;
+		}
+		.home-hot-lefts>.home-hot-left3:after,.home-hot-lefts>.home-hot-left6:after{
+			content: "";
+			height: 0;
+			width: 0;
+		}
+		.home-hot-lefts>.home-hot-left3:before,.home-hot-lefts>.home-hot-left2:before,.home-hot-lefts>.home-hot-left1:before{
+			position: absolute;
+			top: 84px;
+			left: 7px;
+			content: "";			
+			height: 1px;
+			width: 64px;
+			z-index: 1;
+			background-color: #665e57;
+		}
+		.home-hot-left1 i{
 			display: block;
-			font-size: 40px;
+			margin-top: -8px;
+			font-size: 38px;
+		}
+		.home-hot-left1 span{
+			margin-top: -4px;
+			display: block;
+		}
+		.home-hot-left2 i{
+			display: block;
+			font-size: 25px;
+			margin-top: -2px;
+		}
+		.home-hot-left4 i,.home-hot-left6 i{
+			display: block;
+			font-size: 25px;
+		}
+		.home-hot-left2 span{
+			display: block;
+			margin-top: 2px;
+		}
+		.home-hot-left3 i{
+			display: block;
+			margin-top: -4px;
+			font-size: 30px;
+		}
+		.home-hot-left5 i{
+			display: block;
+			font-size: 28px;
+			margin-top: -3px;
 		}
 		.home-hot-rights{
 			height: 170px;
+		}
+		.home-hot-left:hover{
+			color: #fff;
 		}
 		.hot-ad1{
 			float: left;
