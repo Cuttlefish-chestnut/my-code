@@ -94,6 +94,12 @@
 		padding: 12px;
 		border: 1px solid #eee;
 		box-sizing: border-box;
+		transition: border 0.2s linear 0s;
+	}
+	.sousuo-btn{
+		font-size: 20px;
+		color:#454545;
+		transition: border 0.2s linear 0s;	
 	}
 	.sousuo input:hover{
 		border: 1px solid #999;
@@ -109,9 +115,16 @@
 	.sousuo input:focus{
 		border: 1px solid #ff6700;
 	}
-	.sousuo input:focus~.sousuo-btn{
+	.sousuo input:focus+.sousuo-btn{
 		border: 1px solid #ff6700;
 		border-left: none;
+	}
+	.sousuo input:focus~.hot-words{
+		opacity: 0;
+	}
+	.sousuo input~.hot-words{
+		opacity: 1;
+		transition: opacity 0.2s linear 0s;
 	}
 	.sousuo .hot-word{
 		position: absolute;
@@ -120,14 +133,14 @@
 		color: #757575;
 		border:none;
 		font-size: 12px;
+		opacity: 1;
 	}
 	.sousuo .hot-word1{
-		left: 127px;
+		left: 150px;
 		height: 18px;
-
 	}
 	.sousuo .hot-word2{
-		left: 170px;
+		left: 190px;
 		height: 18px;
 	}
 	.sousuo .hotword:hover{
@@ -249,6 +262,10 @@
 			padding-top: 20px; 
 			box-sizing: border-box;
 			font-size: 16px;
+			transition: color 0.2s linear 0s;
+		}
+		.home-hot-left:hover{
+			color: #fff;
 		}
 		.home-hot-lefts>a:after{
 			position: absolute;
@@ -310,9 +327,7 @@
 		.home-hot-rights{
 			height: 170px;
 		}
-		.home-hot-left:hover{
-			color: #fff;
-		}
+
 		.hot-ad1{
 			float: left;
 			height: 170px;
